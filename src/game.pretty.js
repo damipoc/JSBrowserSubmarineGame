@@ -1,8 +1,7 @@
 /*
-284 Assignment 2
+Submarine Game
 Damian Poclitar
-201310598
-sgdpocli */
+*/
 
 
 //Intialising variables
