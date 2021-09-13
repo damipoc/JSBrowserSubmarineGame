@@ -1,0 +1,183 @@
+
+<html lang='en-GB'>
+    <head>
+        <meta charset="utf-8">
+        <title>Submarine Game</title>
+    </head>
+    <body>
+        <h1>Submarine Game</h1>
+        <h2>by Damian Poclitar</h2>
+        <label id="round">Round: 0</label>
+        <label id="fuel">Fuel: 0</label>
+        <label id="userScore">User Score: 0</label>
+        <label id="computerScore">Computer Score: 0</label>
+        <br>
+        <table>
+            <tr>
+                <input id="0-0" size="1">
+                <input id="0-1" size="1">
+                <input id="0-2" size="1">
+                <input id="0-3" size="1">
+                <input id="0-4" size="1">
+                <input id="0-5" size="1">
+                <input id="0-6" size="1">
+                <input id="0-7" size="1">
+                <input id="0-8" size="1">
+                <input id="0-9" size="1">
+            </tr>
+            <br>
+            <tr>
+                <input id="1-0" size="1">
+                <input id="1-1" size="1">
+                <input id="1-2" size="1">
+                <input id="1-3" size="1">
+                <input id="1-4" size="1">
+                <input id="1-5" size="1">
+                <input id="1-6" size="1">
+                <input id="1-7" size="1">
+                <input id="1-8" size="1">
+                <input id="1-9" size="1">
+            </tr>
+            <br>
+            <tr>
+                <input id="2-0" size="1">
+                <input id="2-1" size="1">
+                <input id="2-2" size="1">
+                <input id="2-3" size="1">
+                <input id="2-4" size="1">
+                <input id="2-5" size="1">
+                <input id="2-6" size="1">
+                <input id="2-7" size="1">
+                <input id="2-8" size="1">
+                <input id="2-9" size="1">
+            </tr>
+            <br>
+            <tr>
+                <input id="3-0" size="1">
+                <input id="3-1" size="1">
+                <input id="3-2" size="1">
+                <input id="3-3" size="1">
+                <input id="3-4" size="1">
+                <input id="3-5" size="1">
+                <input id="3-6" size="1">
+                <input id="3-7" size="1">
+                <input id="3-8" size="1">
+                <input id="3-9" size="1">
+            </tr>
+            <br>
+            <tr>
+                <input id="4-0" size="1">
+                <input id="4-1" size="1">
+                <input id="4-2" size="1">
+                <input id="4-3" size="1">
+                <input id="4-4" size="1">
+                <input id="4-5" size="1">
+                <input id="4-6" size="1">
+                <input id="4-7" size="1">
+                <input id="4-8" size="1">
+                <input id="4-9" size="1">
+            </tr>
+            <br>
+            <tr>
+                <input id="5-0" size="1">
+                <input id="5-1" size="1">
+                <input id="5-2" size="1">
+                <input id="5-3" size="1">
+                <input id="5-4" size="1">
+                <input id="5-5" size="1">
+                <input id="5-6" size="1">
+                <input id="5-7" size="1">
+                <input id="5-8" size="1">
+                <input id="5-9" size="1">
+            </tr>
+            <br>
+            <tr>
+                <input id="6-0" size="1">
+                <input id="6-1" size="1">
+                <input id="6-2" size="1">
+                <input id="6-3" size="1">
+                <input id="6-4" size="1">
+                <input id="6-5" size="1">
+                <input id="6-6" size="1">
+                <input id="6-7" size="1">
+                <input id="6-8" size="1">
+                <input id="6-9" size="1">
+            </tr>
+            <br>
+            <tr>
+                <input id="7-0" size="1">
+                <input id="7-1" size="1">
+                <input id="7-2" size="1">
+                <input id="7-3" size="1">
+                <input id="7-4" size="1">
+                <input id="7-5" size="1">
+                <input id="7-6" size="1">
+                <input id="7-7" size="1">
+                <input id="7-8" size="1">
+                <input id="7-9" size="1">
+            </tr>
+            <br>
+            <tr>
+                <input id="8-0" size="1">
+                <input id="8-1" size="1">
+                <input id="8-2" size="1">
+                <input id="8-3" size="1">
+                <input id="8-4" size="1">
+                <input id="8-5" size="1">
+                <input id="8-6" size="1">
+                <input id="8-7" size="1">
+                <input id="8-8" size="1">
+                <input id="8-9" size="1">
+            </tr>
+            <br>
+            <tr>
+                <input id="9-0" size="1">
+                <input id="9-1" size="1">
+                <input id="9-2" size="1">
+                <input id="9-3" size="1">
+                <input id="9-4" size="1">
+                <input id="9-5" size="1">
+                <input id="9-6" size="1">
+                <input id="9-7" size="1">
+                <input id="9-8" size="1">
+                <input id="9-9" size="1">
+            </tr>
+            <br>
+            <label id="stage">Stage: Setup</label>
+            <input id="userInput">
+            <button id="submit">Submit</button>
+            <button id="startEnd">Start/End</button>
+            <br>
+        </table>
+        <label id="outcome"></label>
+        <br>
+        <br>
+        <br>
+        <label>Instructions</label>
+        <br>
+        <p>Setup Stage:</br>
+        Click on a cell and type a number between 5 and 9, a fuel cell with that amount of fuel will be placed.</br>
+        Click on a cell and type "o" to place an obstacle, the user and the killer submarine can not go there.</br>
+        Click on a cell and type "u" to place the User submarine to control, only one allowed.</br>
+        Click on a cell and type "k" to place a killer submarine to move around, avoid those or else you will lose.</br>
+        Anything other than that will not be accepted, once you are done press the "Start" button. </p>
+        <p>Play Stage:</br>
+        The objective is simple, collect all the fuel cells("5-9") without getting caught by the killer submarines("k").</br>
+        The scoreboard above shows you the current round, current fuel, your score and the killer submarines score. </br>
+        You can only move if you have fuel, collect the fuel cells to replenish your fuel and add points to your score.</br>
+        If the killer robots take a fuel cell then they get the points, they do not need fuel to move so they have unlimited moves.</p>
+        <p>Movement:</br>
+        w - Up</br>
+        a - Left</br>
+        d - Right</br>
+        x - Down</br>
+        Enter one of these letters in the field bellow the board and click "Submit" to move. </p>
+        <p>If you manage to collect all the fuel cells or get have a higher score than the killer submarines without getting killed you win!</br>
+        If the game starts without any killer submarines you also win.</br>
+        If the killer submarines manage to get a higher score than you or kill your submarine then you lose.</br> 
+        Else the game will result in a draw.</p>
+        <label>Have fun!</label>
+
+        <script src="game.js"></script>
+    </body>
+</html>
